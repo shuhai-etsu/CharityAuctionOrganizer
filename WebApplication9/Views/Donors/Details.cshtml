@@ -1,0 +1,91 @@
+﻿@model WebApplication9.Models.Donor
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Donor</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Donor_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Donor_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Donor_Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Donor_Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Donor_Phone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Donor_Phone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Street_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Street_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Street_Number)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Street_Number)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Suite_Number)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Suite_Number)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Donor_City)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Donor_City)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Donor_State)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Donor_State)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Donor_Zip)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Donor_Zip)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Donor_ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

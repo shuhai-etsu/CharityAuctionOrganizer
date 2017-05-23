@@ -1,0 +1,67 @@
+﻿@model IEnumerable<WebApplication9.Models.Item>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Item</h2>
+
+<form>
+    Item name:<br>
+    <input type="text" name="itemname"><br>
+</form> 
+
+<p>
+    @Html.ActionLink("Search Item", "Search")
+</p>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Item_Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Item_Value)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Item_Decription)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sold_Amount)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Item_Category)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Item_Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Item_Value)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Item_Decription)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sold_Amount)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Item_Category)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Item_Number }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Item_Number }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Item_Number })
+        </td>
+    </tr>
+}
+
+</table>

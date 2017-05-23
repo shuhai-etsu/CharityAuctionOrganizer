@@ -1,0 +1,99 @@
+﻿@model WebApplication9.Models.Bidder
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Bidder</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.First_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.First_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Last_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Last_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Street_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Street_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Street_Number)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Street_Number)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Suite_Number)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Suite_Number)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Bidder_City)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Bidder_City)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Bidder_State)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Bidder_State)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Bidder_Zip)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Bidder_Zip)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Bidder_Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Bidder_Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Join_Society)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Join_Society)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Bidder_ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
